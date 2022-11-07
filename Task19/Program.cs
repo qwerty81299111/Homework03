@@ -9,7 +9,7 @@
 //23432 -> да
 
 
-bool Palendrome(int number)
+bool Palindrome(int number)
 {
     int firstnum = number / 10000;
     int secondnum = number / 1000;
@@ -22,7 +22,7 @@ bool Palendrome(int number)
 Console.WriteLine("Введите пятизначное число ");
 int num = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-if (num > 9999 && num < 100000) Console.WriteLine(Palendrome(num) ? "Да, это палиндром" 
+if (num > 9999 && num < 100000) Console.WriteLine(Palindrome(num) ? "Да, это палиндром" 
 : "Нет, это не палиндром");else Console.WriteLine("число не является пятизначным");
 
 
